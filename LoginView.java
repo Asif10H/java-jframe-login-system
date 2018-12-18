@@ -59,22 +59,18 @@ public class LoginView {
       	   
       	   public void actionPerformed(ActionEvent e)
       	   {
-      			 //System.out.println("Hi java!");
-      		   
-      		 String uname = userText.getText();  
+      			
+      		         String uname = userText.getText();  
    			 String  pass = passwordText.getText();
    			 if(uname.equals("Asif") && pass.equals("Asif"))
-   			 {
-   				 JOptionPane.showMessageDialog(panel, "you are sucessfully login");
-   				 if(e.getActionCommand() != null)
-       		     {
-       			  SecondFrame fr = new SecondFrame();
-  				  fr.setVisible(true);
-  				  fr.setSize(400, 400);
-                  fr.setTitle("My second Frame");
-                 }
-   			 }
-   			    else
+   			  {
+   			      JOptionPane.showMessageDialog(panel, "you are sucessfully login");
+   			      if(e.getActionCommand() != null)
+       		           {
+       			   MenuExample fr = new MenuExample();
+                           }
+   			
+   			 else
    			     {
    				    JOptionPane.showMessageDialog(panel, "invalid username or passworld");
    			     }
