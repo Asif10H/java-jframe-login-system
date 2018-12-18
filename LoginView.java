@@ -1,4 +1,4 @@
-import java.awt.event.ActionEvent;
+ vimport java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -59,18 +59,19 @@ public class LoginView {
       	   
       	   public void actionPerformed(ActionEvent e)
       	   {
-      			
-      		         String uname = userText.getText();  
+      			 //System.out.println("Hi java!");
+      		   
+      		 String uname = userText.getText();  
    			 String  pass = passwordText.getText();
-   			 if(uname.equals("Asif") && pass.equals("Asif"))
-   			  {
-   			      JOptionPane.showMessageDialog(panel, "you are sucessfully login");
-   			      if(e.getActionCommand() != null)
-       		           {
-       			   MenuExample fr = new MenuExample();
-                           }
-   			
-   			 else
+   			 if(uname.equals("a") && pass.equals("a"))
+   			 {
+   				 JOptionPane.showMessageDialog(panel, "you are sucessfully login");
+   				 if(e.getActionCommand() != null)
+       		                  {
+   					MenuExample fr = new MenuExample();
+  				  }
+   		        }
+   			  else
    			     {
    				    JOptionPane.showMessageDialog(panel, "invalid username or passworld");
    			     }
@@ -83,3 +84,4 @@ public class LoginView {
 	}
   
 }
+
