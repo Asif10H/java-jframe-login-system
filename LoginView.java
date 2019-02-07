@@ -1,4 +1,4 @@
- vimport java.awt.event.ActionEvent;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -63,7 +63,7 @@ public class LoginView {
       		   
       		 String uname = userText.getText();  
    			 String  pass = passwordText.getText();
-   			 if(uname.equals("a") && pass.equals("a"))
+   			 if(uname.equals("password") && pass.equals("password"))
    			 {
    				 JOptionPane.showMessageDialog(panel, "you are sucessfully login");
    				 if(e.getActionCommand() != null)
